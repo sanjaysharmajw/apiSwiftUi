@@ -1,15 +1,13 @@
-//
-//  CustomText.swift
-//  ApiSwiftUI
-//
-//  Created by Sanjay Sharma on 17/07/24.
-//
 
 import SwiftUI
 
 struct CustomText: View {
+    @State var text: String = ""
+    var action: () -> Void = {}
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(text).onTapGesture(perform: {
+            action()
+        })
     }
 }
 

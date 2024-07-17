@@ -14,6 +14,17 @@
 		3CC267A62C47BB7800B23BDF /* ApiSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267A52C47BB7800B23BDF /* ApiSwiftUITests.swift */; };
 		3CC267B02C47BB7800B23BDF /* ApiSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267AF2C47BB7800B23BDF /* ApiSwiftUIUITests.swift */; };
 		3CC267B22C47BB7800B23BDF /* ApiSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267B12C47BB7800B23BDF /* ApiSwiftUIUITestsLaunchTests.swift */; };
+		3CC267C02C47BDCA00B23BDF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267BF2C47BDCA00B23BDF /* LoginViewModel.swift */; };
+		3CC267C42C47BE5200B23BDF /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267C32C47BE5200B23BDF /* LoginRequest.swift */; };
+		3CC267C62C47BE5D00B23BDF /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267C52C47BE5D00B23BDF /* LoginModel.swift */; };
+		3CC267C92C47BF1900B23BDF /* LoginNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267C82C47BF1900B23BDF /* LoginNetwork.swift */; };
+		3CC267CB2C47BF5E00B23BDF /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267CA2C47BF5E00B23BDF /* APError.swift */; };
+		3CC267CE2C47BFE100B23BDF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267CD2C47BFE100B23BDF /* LoginView.swift */; };
+		3CC267D12C47C03C00B23BDF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267D02C47C03C00B23BDF /* CustomButton.swift */; };
+		3CC267D32C47C04D00B23BDF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267D22C47C04D00B23BDF /* CustomTextField.swift */; };
+		3CC267D52C47C05800B23BDF /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267D42C47C05800B23BDF /* CustomText.swift */; };
+		3CC267D72C47C13200B23BDF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267D62C47C13200B23BDF /* LoadingView.swift */; };
+		3CC267DA2C47C1F300B23BDF /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267D92C47C1F300B23BDF /* AlertItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,17 @@
 		3CC267AB2C47BB7800B23BDF /* ApiSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApiSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC267AF2C47BB7800B23BDF /* ApiSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSwiftUIUITests.swift; sourceTree = "<group>"; };
 		3CC267B12C47BB7800B23BDF /* ApiSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CC267BF2C47BDCA00B23BDF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		3CC267C32C47BE5200B23BDF /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		3CC267C52C47BE5D00B23BDF /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		3CC267C82C47BF1900B23BDF /* LoginNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetwork.swift; sourceTree = "<group>"; };
+		3CC267CA2C47BF5E00B23BDF /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
+		3CC267CD2C47BFE100B23BDF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3CC267D02C47C03C00B23BDF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		3CC267D22C47C04D00B23BDF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		3CC267D42C47C05800B23BDF /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
+		3CC267D62C47C13200B23BDF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		3CC267D92C47C1F300B23BDF /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +116,13 @@
 		3CC267932C47BB7600B23BDF /* ApiSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				3CC267D82C47C1D900B23BDF /* Utilities */,
+				3CC267CF2C47C02700B23BDF /* CustomView */,
+				3CC267CC2C47BFBA00B23BDF /* View */,
+				3CC267C72C47BEB400B23BDF /* Network */,
+				3CC267C22C47BE3F00B23BDF /* Request */,
+				3CC267C12C47BE3A00B23BDF /* Model */,
+				3CC267BE2C47BDB300B23BDF /* ViewModel */,
 				3CC267942C47BB7600B23BDF /* ApiSwiftUIApp.swift */,
 				3CC267962C47BB7600B23BDF /* ContentView.swift */,
 				3CC267982C47BB7800B23BDF /* Assets.xcassets */,
@@ -125,6 +154,66 @@
 				3CC267B12C47BB7800B23BDF /* ApiSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = ApiSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		3CC267BE2C47BDB300B23BDF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3CC267BF2C47BDCA00B23BDF /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3CC267C12C47BE3A00B23BDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CC267C52C47BE5D00B23BDF /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3CC267C22C47BE3F00B23BDF /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				3CC267C32C47BE5200B23BDF /* LoginRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		3CC267C72C47BEB400B23BDF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3CC267C82C47BF1900B23BDF /* LoginNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3CC267CC2C47BFBA00B23BDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3CC267CD2C47BFE100B23BDF /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3CC267CF2C47C02700B23BDF /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				3CC267D02C47C03C00B23BDF /* CustomButton.swift */,
+				3CC267D22C47C04D00B23BDF /* CustomTextField.swift */,
+				3CC267D42C47C05800B23BDF /* CustomText.swift */,
+				3CC267D62C47C13200B23BDF /* LoadingView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		3CC267D82C47C1D900B23BDF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3CC267CA2C47BF5E00B23BDF /* APError.swift */,
+				3CC267D92C47C1F300B23BDF /* AlertItem.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +346,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC267C62C47BE5D00B23BDF /* LoginModel.swift in Sources */,
 				3CC267972C47BB7600B23BDF /* ContentView.swift in Sources */,
+				3CC267D12C47C03C00B23BDF /* CustomButton.swift in Sources */,
 				3CC267952C47BB7600B23BDF /* ApiSwiftUIApp.swift in Sources */,
+				3CC267D32C47C04D00B23BDF /* CustomTextField.swift in Sources */,
+				3CC267D72C47C13200B23BDF /* LoadingView.swift in Sources */,
+				3CC267C02C47BDCA00B23BDF /* LoginViewModel.swift in Sources */,
+				3CC267CB2C47BF5E00B23BDF /* APError.swift in Sources */,
+				3CC267D52C47C05800B23BDF /* CustomText.swift in Sources */,
+				3CC267C92C47BF1900B23BDF /* LoginNetwork.swift in Sources */,
+				3CC267CE2C47BFE100B23BDF /* LoginView.swift in Sources */,
+				3CC267DA2C47C1F300B23BDF /* AlertItem.swift in Sources */,
+				3CC267C42C47BE5200B23BDF /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +522,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ApiSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 4B3FZ5MN3Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -450,6 +551,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ApiSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 4B3FZ5MN3Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

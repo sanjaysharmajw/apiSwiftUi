@@ -1,18 +1,28 @@
 //
 //  CustomButton.swift
-//  ApiSwiftUI
+//  SwiftUI-MVVM
 //
-//  Created by Sanjay Sharma on 17/07/24.
+//  Created by Sanjay Sharma on 16/07/24.
 //
 
 import SwiftUI
 
 struct CustomButton: View {
+    let title: String
+    let action:()->Void
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: action) {
+            Text(title)
+                .foregroundColor(.white)
+                .frame(maxWidth: .infinity)
+                .frame(height: 50)
+                .background(Color.blue)
+                .cornerRadius(5)
+        }
     }
 }
 
 #Preview {
-    CustomButton()
+    CustomButton(title: "Action", action: {})
 }
