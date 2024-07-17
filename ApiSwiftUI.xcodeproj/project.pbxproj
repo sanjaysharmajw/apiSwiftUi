@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3CC267952C47BB7600B23BDF /* ApiSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267942C47BB7600B23BDF /* ApiSwiftUIApp.swift */; };
-		3CC267972C47BB7600B23BDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267962C47BB7600B23BDF /* ContentView.swift */; };
 		3CC267992C47BB7800B23BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC267982C47BB7800B23BDF /* Assets.xcassets */; };
 		3CC2679C2C47BB7800B23BDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC2679B2C47BB7800B23BDF /* Preview Assets.xcassets */; };
 		3CC267A62C47BB7800B23BDF /* ApiSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267A52C47BB7800B23BDF /* ApiSwiftUITests.swift */; };
@@ -25,6 +24,7 @@
 		3CC267D52C47C05800B23BDF /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267D42C47C05800B23BDF /* CustomText.swift */; };
 		3CC267D72C47C13200B23BDF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267D62C47C13200B23BDF /* LoadingView.swift */; };
 		3CC267DA2C47C1F300B23BDF /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267D92C47C1F300B23BDF /* AlertItem.swift */; };
+		3CC267DC2C47C4A200B23BDF /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267DB2C47C4A200B23BDF /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 /* Begin PBXFileReference section */
 		3CC267912C47BB7600B23BDF /* ApiSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC267942C47BB7600B23BDF /* ApiSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSwiftUIApp.swift; sourceTree = "<group>"; };
-		3CC267962C47BB7600B23BDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3CC267982C47BB7800B23BDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CC2679B2C47BB7800B23BDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3CC267A12C47BB7800B23BDF /* ApiSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApiSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +65,7 @@
 		3CC267D42C47C05800B23BDF /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
 		3CC267D62C47C13200B23BDF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		3CC267D92C47C1F300B23BDF /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		3CC267DB2C47C4A200B23BDF /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +124,6 @@
 				3CC267C12C47BE3A00B23BDF /* Model */,
 				3CC267BE2C47BDB300B23BDF /* ViewModel */,
 				3CC267942C47BB7600B23BDF /* ApiSwiftUIApp.swift */,
-				3CC267962C47BB7600B23BDF /* ContentView.swift */,
 				3CC267982C47BB7800B23BDF /* Assets.xcassets */,
 				3CC2679A2C47BB7800B23BDF /* Preview Content */,
 			);
@@ -192,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				3CC267CD2C47BFE100B23BDF /* LoginView.swift */,
+				3CC267DB2C47C4A200B23BDF /* RegistrationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -347,8 +347,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CC267C62C47BE5D00B23BDF /* LoginModel.swift in Sources */,
-				3CC267972C47BB7600B23BDF /* ContentView.swift in Sources */,
 				3CC267D12C47C03C00B23BDF /* CustomButton.swift in Sources */,
+				3CC267DC2C47C4A200B23BDF /* RegistrationView.swift in Sources */,
 				3CC267952C47BB7600B23BDF /* ApiSwiftUIApp.swift in Sources */,
 				3CC267D32C47C04D00B23BDF /* CustomTextField.swift in Sources */,
 				3CC267D72C47C13200B23BDF /* LoadingView.swift in Sources */,
