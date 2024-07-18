@@ -7,11 +7,19 @@ struct CustomTextField: View {
     var placeholder: String
 
     var body: some View {
+        
         TextField(placeholder, text: $text)
-                    .frame(height: 50)
-                    .padding([.leading], 20)
-                    .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.gray, lineWidth: 2))
-                    .tint(.red)
+            .keyboardType(.numberPad)
+            .padding()
+            .background(Color(.systemGray6))
+            .cornerRadius(8)
+
+        
+//        TextField(placeholder, text: $text)
+//                    .frame(height: 50)
+//                    .padding([.leading], 20)
+//                    .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.gray, lineWidth: 2))
+//                    .tint(.red)
     }
 }
 

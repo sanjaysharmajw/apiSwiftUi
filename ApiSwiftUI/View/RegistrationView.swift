@@ -3,59 +3,49 @@ import SwiftUI
 struct RegistrationView: View {
     @State private var memberName: String = ""
     @State private var mobileNumber: String = ""
+    @State private var email: String = ""
+    @State private var loginToken: String = ""
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        NavigationView{
-            VStack {
-                // Header
-                HStack {
-                    Button(action: {
-                        presentationMode.wrappedValue.dismiss()
-                    }) {
-                        Image(systemName: "arrow.left")
-                            .foregroundColor(.white)
-                    }
-                    Spacer()
-                    Text("Registration")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                       
-                    Spacer()
-                }
-                .padding()
-                .background(Color.blue)
-                
-                VStack(alignment: .leading, spacing: 16) {
+        NavigationView {
+    
+                  
+            VStack{
+                VStack(alignment:.leading,spacing: 16) {
+                    Text(loginToken)
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                    
                     Text("Member Name")
                         .font(.subheadline)
                         .foregroundColor(.black)
                     
-                    TextField("Member Name", text: $memberName)
-                        .padding()
-                        .background(Color(.systemGray6))
-                        .cornerRadius(8)
+                    CustomTextField(text: $memberName, placeholder: "Member Name")
                     
                     Text("Mobile Number")
                         .font(.subheadline)
                         .foregroundColor(.black)
                     
-                    TextField("Mobile Number", text: $mobileNumber)
-                        .keyboardType(.numberPad)
-                        .padding()
-                        .background(Color(.systemGray6))
-                        .cornerRadius(8)
-                }
-                .padding(.horizontal, 24)
-                .padding(.top, 24)
-                
-                Spacer()
-                
-                CustomButton(title: "Submit") {
+                    CustomTextField(text: $mobileNumber, placeholder: "Mobile Number")
                     
-                }.padding(.horizontal,24)
+                    Text("Email")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                    
+                    CustomTextField(text: $email, placeholder: "Email")
+                    
+                    CustomButton(title: "Submit") {}.padding(.top,50)
+                    Spacer()
+                }
+                .navigationBarBackButtonHidden(true)
+                .padding(.horizontal, 24)
+      
             }
-        }
+    
+        } .navigationBarBackButtonHidden(false)
+            .navigationTitle("Registration")
+            .navigationBarTitleDisplayMode(.inline)
     }
 }
 

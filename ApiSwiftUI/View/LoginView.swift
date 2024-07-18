@@ -13,12 +13,14 @@ struct LoginView: View {
     
     @StateObject private var viewModel = LoginViewModel()
     @State private var isSecondViewActive = false
+
     
     var body: some View {
         NavigationView{
             VStack(spacing: 20){
                 CustomText(text: "Login!").font(.system(size: 40)).padding(.bottom)
                 if let loginResponse = viewModel.loginResponse {
+                
                     Text("Login successful: \(loginResponse.token)").padding()
                     NavigationLink(destination: RegistrationView(), isActive: $isSecondViewActive) {
                                       EmptyView()
@@ -49,8 +51,9 @@ struct LoginView: View {
             }.padding(20)
         }
         
-  
     }
+
+      
 }
 
 #Preview {
