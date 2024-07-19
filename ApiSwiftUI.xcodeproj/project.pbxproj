@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3C0AD9E32C4831C700FA1E69 /* BottomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0AD9E22C4831C700FA1E69 /* BottomNavigationView.swift */; };
+		3C178D752C4AC5FC000DCDF6 /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C178D742C4AC5FC000DCDF6 /* ToolbarView.swift */; };
+		3C178D772C4AD7F9000DCDF6 /* SwipeToDismissModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C178D762C4AD7F9000DCDF6 /* SwipeToDismissModifier.swift */; };
+		3C178D7A2C4AD9E5000DCDF6 /* CustomNavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C178D792C4AD9E5000DCDF6 /* CustomNavigationBarModifier.swift */; };
+		3C178D7C2C4AE9CE000DCDF6 /* NavigationBarAppearanceModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C178D7B2C4AE9CE000DCDF6 /* NavigationBarAppearanceModifier.swift */; };
 		3C6AF5442C490D94008E65B4 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6AF5432C490D94008E65B4 /* UserDefaultsManager.swift */; };
 		3CC267952C47BB7600B23BDF /* ApiSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267942C47BB7600B23BDF /* ApiSwiftUIApp.swift */; };
 		3CC267992C47BB7800B23BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC267982C47BB7800B23BDF /* Assets.xcassets */; };
@@ -48,6 +52,10 @@
 
 /* Begin PBXFileReference section */
 		3C0AD9E22C4831C700FA1E69 /* BottomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationView.swift; sourceTree = "<group>"; };
+		3C178D742C4AC5FC000DCDF6 /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
+		3C178D762C4AD7F9000DCDF6 /* SwipeToDismissModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeToDismissModifier.swift; sourceTree = "<group>"; };
+		3C178D792C4AD9E5000DCDF6 /* CustomNavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarModifier.swift; sourceTree = "<group>"; };
+		3C178D7B2C4AE9CE000DCDF6 /* NavigationBarAppearanceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarAppearanceModifier.swift; sourceTree = "<group>"; };
 		3C6AF5432C490D94008E65B4 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		3CC267912C47BB7600B23BDF /* ApiSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC267942C47BB7600B23BDF /* ApiSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -97,6 +105,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C178D782C4AD993000DCDF6 /* CustomToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				3C178D762C4AD7F9000DCDF6 /* SwipeToDismissModifier.swift */,
+				3C178D792C4AD9E5000DCDF6 /* CustomNavigationBarModifier.swift */,
+				3C178D7B2C4AE9CE000DCDF6 /* NavigationBarAppearanceModifier.swift */,
+			);
+			path = CustomToolbar;
+			sourceTree = "<group>";
+		};
 		3CC267882C47BB7600B23BDF = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +215,7 @@
 				3CC267CD2C47BFE100B23BDF /* LoginView.swift */,
 				3CC267DB2C47C4A200B23BDF /* RegistrationView.swift */,
 				3C0AD9E22C4831C700FA1E69 /* BottomNavigationView.swift */,
+				3C178D742C4AC5FC000DCDF6 /* ToolbarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +234,7 @@
 		3CC267D82C47C1D900B23BDF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				3C178D782C4AD993000DCDF6 /* CustomToolbar */,
 				3CC267CA2C47BF5E00B23BDF /* APError.swift */,
 				3CC267D92C47C1F300B23BDF /* AlertItem.swift */,
 				3C6AF5432C490D94008E65B4 /* UserDefaultsManager.swift */,
@@ -359,11 +379,15 @@
 				3CC267D32C47C04D00B23BDF /* CustomTextField.swift in Sources */,
 				3CC267D72C47C13200B23BDF /* LoadingView.swift in Sources */,
 				3CC267C02C47BDCA00B23BDF /* LoginViewModel.swift in Sources */,
+				3C178D772C4AD7F9000DCDF6 /* SwipeToDismissModifier.swift in Sources */,
 				3CC267CB2C47BF5E00B23BDF /* APError.swift in Sources */,
+				3C178D7A2C4AD9E5000DCDF6 /* CustomNavigationBarModifier.swift in Sources */,
 				3CC267D52C47C05800B23BDF /* CustomText.swift in Sources */,
 				3C0AD9E32C4831C700FA1E69 /* BottomNavigationView.swift in Sources */,
+				3C178D752C4AC5FC000DCDF6 /* ToolbarView.swift in Sources */,
 				3CC267C92C47BF1900B23BDF /* LoginNetwork.swift in Sources */,
 				3C6AF5442C490D94008E65B4 /* UserDefaultsManager.swift in Sources */,
+				3C178D7C2C4AE9CE000DCDF6 /* NavigationBarAppearanceModifier.swift in Sources */,
 				3CC267CE2C47BFE100B23BDF /* LoginView.swift in Sources */,
 				3CC267DA2C47C1F300B23BDF /* AlertItem.swift in Sources */,
 				3CC267C42C47BE5200B23BDF /* LoginRequest.swift in Sources */,

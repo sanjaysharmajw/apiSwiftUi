@@ -8,57 +8,77 @@
 import SwiftUI
 
 struct BottomNavigationView: View {
-    @State private var selectedIndex: Int = 0
+    @State private var selectedTab = 0
+    
     var body: some View {
-        TabView(selection: $selectedIndex) {
-            NavigationStack() {
-                HStack{
-                    Text("Home").font(.system(size: 22, weight: .bold)).foregroundColor(.white)
-                }.frame(maxWidth: .infinity, maxHeight: 40).background(Color.blue)
-                Spacer()
-            }
-            .tabItem {
-                Text("Home view")
-                Image(systemName: "house.fill").renderingMode(.template)
-            }
-            .tag(0)
-            NavigationStack() {
-                HStack{
-                    Text("Profile").font(.system(size: 22, weight: .bold)).foregroundColor(.white)
-                }.frame(maxWidth: .infinity, maxHeight: 40).background(Color.blue)
-                Spacer()
-            }
-            .tabItem {
-                Label("Profile", systemImage: "person.fill")
-            }
-            .tag(1)
+        TabView(selection: $selectedTab) {
+            HomeView()
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+                .tag(0)
             
-            NavigationStack() {
-                HStack{
-                    Text("About View").font(.system(size: 22, weight: .bold)).foregroundColor(.white)
-                }.frame(maxWidth: .infinity, maxHeight: 40).background(Color.blue)
-                Spacer()
-            }
-            .tabItem {
-                Text("About view")
-                Image(systemName: "info.circle")
-            }
-            .tag(2)
+            ListView()
+                .tabItem {
+                    Label("List", systemImage: "list.dash")
+                }
+                .tag(1)
+            
+            NotificationView()
+                .tabItem {
+                    Label("Notification", systemImage: "bell")
+                }
+                .tag(2)
+            
+            ProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: "person.crop.circle")
+                }
+                .tag(3)
         }
-        //1
-        .tint(.blue)
-        .onAppear(perform: {
-            //2
-            UITabBar.appearance().unselectedItemTintColor = .gray
-            //3
-            UITabBarItem.appearance().badgeColor = .systemPink
-            //4
-            UITabBar.appearance().backgroundColor = .systemGray4.withAlphaComponent(0.4)
-            //5
-            UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.systemPink]
-            // UITabBar.appearance().scrollEdgeAppearance = UITabBarAppearance()
-            //Above API will kind of override other behaviour and bring the default UI for TabView
-        })
+        .navigationTitle("Custom Title").font(.title)
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            // Notification bell icon on the right side
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    // Handle notification bell tap
+                    print("Notification bell tapped")
+                }) {
+                    Image(systemName: "bell")
+                        .foregroundColor(.white)
+                }
+            }
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarHidden(false) // Ensure navigation bar is visible
+    }
+}
+
+struct HomeView: View {
+    var body: some View {
+        Text("Home View")
+            .navigationTitle("Home") // Navigation title for Home
+    }
+}
+
+struct ListView: View {
+    var body: some View {
+      LoginView()
+    }
+}
+
+struct NotificationView: View {
+    var body: some View {
+        Text("Notification View")
+            .navigationTitle("Notification") // Navigation title for Notification
+    }
+}
+
+struct ProfileView: View {
+    var body: some View {
+        Text("Profile View")
+            .navigationTitle("Profile") // Navigation title for Profile
     }
 }
 
