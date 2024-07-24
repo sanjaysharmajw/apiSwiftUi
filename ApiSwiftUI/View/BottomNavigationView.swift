@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BottomNavigationView: View {
     @State private var selectedTab = 0
+    @State private var title = "Home"
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -17,26 +18,38 @@ struct BottomNavigationView: View {
                     Label("Home", systemImage: "house")
                 }
                 .tag(0)
+                .onAppear {
+                        title = "Home"
+                        }
             
             ListView()
                 .tabItem {
                     Label("List", systemImage: "list.dash")
                 }
                 .tag(1)
+                .onAppear {
+                        title = "List"
+                        }
             
             NotificationView()
                 .tabItem {
                     Label("Notification", systemImage: "bell")
                 }
                 .tag(2)
+                .onAppear {
+                        title = "Notification"
+                        }
             
             ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person.crop.circle")
                 }
                 .tag(3)
+                .onAppear {
+                        title = "Profile"
+                        }
         }
-        .navigationTitle("Custom Title").font(.title)
+        .navigationTitle(title).font(.title)
         .navigationBarBackButtonHidden(true)
         .toolbar {
             // Notification bell icon on the right side
@@ -57,6 +70,7 @@ struct BottomNavigationView: View {
 
 struct HomeView: View {
     var body: some View {
+
         Text("Home View")
             .navigationTitle("Home") // Navigation title for Home
     }
@@ -64,7 +78,7 @@ struct HomeView: View {
 
 struct ListView: View {
     var body: some View {
-      LoginView()
+        UserListView()
     }
 }
 

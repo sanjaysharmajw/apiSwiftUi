@@ -12,7 +12,12 @@
 		3C178D772C4AD7F9000DCDF6 /* SwipeToDismissModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C178D762C4AD7F9000DCDF6 /* SwipeToDismissModifier.swift */; };
 		3C178D7A2C4AD9E5000DCDF6 /* CustomNavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C178D792C4AD9E5000DCDF6 /* CustomNavigationBarModifier.swift */; };
 		3C178D7C2C4AE9CE000DCDF6 /* NavigationBarAppearanceModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C178D7B2C4AE9CE000DCDF6 /* NavigationBarAppearanceModifier.swift */; };
+		3C4722292C50170800EB9ACE /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4722282C50170800EB9ACE /* UserListView.swift */; };
+		3C47222B2C50172E00EB9ACE /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47222A2C50172E00EB9ACE /* UserListViewModel.swift */; };
 		3C6AF5442C490D94008E65B4 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6AF5432C490D94008E65B4 /* UserDefaultsManager.swift */; };
+		3C985D042C4C2FE60058A153 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C985D032C4C2FE60058A153 /* SplashView.swift */; };
+		3C9B5A162C4FF497003E3BE5 /* UserListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B5A152C4FF497003E3BE5 /* UserListModel.swift */; };
+		3C9B5A182C4FF6F0003E3BE5 /* UserListNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B5A172C4FF6F0003E3BE5 /* UserListNetwork.swift */; };
 		3CC267952C47BB7600B23BDF /* ApiSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC267942C47BB7600B23BDF /* ApiSwiftUIApp.swift */; };
 		3CC267992C47BB7800B23BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC267982C47BB7800B23BDF /* Assets.xcassets */; };
 		3CC2679C2C47BB7800B23BDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC2679B2C47BB7800B23BDF /* Preview Assets.xcassets */; };
@@ -56,7 +61,12 @@
 		3C178D762C4AD7F9000DCDF6 /* SwipeToDismissModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeToDismissModifier.swift; sourceTree = "<group>"; };
 		3C178D792C4AD9E5000DCDF6 /* CustomNavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarModifier.swift; sourceTree = "<group>"; };
 		3C178D7B2C4AE9CE000DCDF6 /* NavigationBarAppearanceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarAppearanceModifier.swift; sourceTree = "<group>"; };
+		3C4722282C50170800EB9ACE /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		3C47222A2C50172E00EB9ACE /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		3C6AF5432C490D94008E65B4 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		3C985D032C4C2FE60058A153 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		3C9B5A152C4FF497003E3BE5 /* UserListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModel.swift; sourceTree = "<group>"; };
+		3C9B5A172C4FF6F0003E3BE5 /* UserListNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListNetwork.swift; sourceTree = "<group>"; };
 		3CC267912C47BB7600B23BDF /* ApiSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC267942C47BB7600B23BDF /* ApiSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSwiftUIApp.swift; sourceTree = "<group>"; };
 		3CC267982C47BB7800B23BDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -181,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				3CC267BF2C47BDCA00B23BDF /* LoginViewModel.swift */,
+				3C47222A2C50172E00EB9ACE /* UserListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -189,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				3CC267C52C47BE5D00B23BDF /* LoginModel.swift */,
+				3C9B5A152C4FF497003E3BE5 /* UserListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				3CC267C82C47BF1900B23BDF /* LoginNetwork.swift */,
+				3C9B5A172C4FF6F0003E3BE5 /* UserListNetwork.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -216,6 +229,8 @@
 				3CC267DB2C47C4A200B23BDF /* RegistrationView.swift */,
 				3C0AD9E22C4831C700FA1E69 /* BottomNavigationView.swift */,
 				3C178D742C4AC5FC000DCDF6 /* ToolbarView.swift */,
+				3C985D032C4C2FE60058A153 /* SplashView.swift */,
+				3C4722282C50170800EB9ACE /* UserListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -373,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CC267C62C47BE5D00B23BDF /* LoginModel.swift in Sources */,
+				3C47222B2C50172E00EB9ACE /* UserListViewModel.swift in Sources */,
 				3CC267D12C47C03C00B23BDF /* CustomButton.swift in Sources */,
 				3CC267DC2C47C4A200B23BDF /* RegistrationView.swift in Sources */,
 				3CC267952C47BB7600B23BDF /* ApiSwiftUIApp.swift in Sources */,
@@ -383,12 +399,16 @@
 				3CC267CB2C47BF5E00B23BDF /* APError.swift in Sources */,
 				3C178D7A2C4AD9E5000DCDF6 /* CustomNavigationBarModifier.swift in Sources */,
 				3CC267D52C47C05800B23BDF /* CustomText.swift in Sources */,
+				3C9B5A182C4FF6F0003E3BE5 /* UserListNetwork.swift in Sources */,
 				3C0AD9E32C4831C700FA1E69 /* BottomNavigationView.swift in Sources */,
+				3C9B5A162C4FF497003E3BE5 /* UserListModel.swift in Sources */,
 				3C178D752C4AC5FC000DCDF6 /* ToolbarView.swift in Sources */,
 				3CC267C92C47BF1900B23BDF /* LoginNetwork.swift in Sources */,
 				3C6AF5442C490D94008E65B4 /* UserDefaultsManager.swift in Sources */,
+				3C4722292C50170800EB9ACE /* UserListView.swift in Sources */,
 				3C178D7C2C4AE9CE000DCDF6 /* NavigationBarAppearanceModifier.swift in Sources */,
 				3CC267CE2C47BFE100B23BDF /* LoginView.swift in Sources */,
+				3C985D042C4C2FE60058A153 /* SplashView.swift in Sources */,
 				3CC267DA2C47C1F300B23BDF /* AlertItem.swift in Sources */,
 				3CC267C42C47BE5200B23BDF /* LoginRequest.swift in Sources */,
 			);

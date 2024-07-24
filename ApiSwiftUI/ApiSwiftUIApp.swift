@@ -9,12 +9,25 @@ import SwiftUI
 
 @main
 struct ApiSwiftUIApp: App {
+    @State private var isActive = false
     var body: some Scene {
         WindowGroup {
-            LoginView()
-            //ContentView()
-           // BottomNavigationView()
+            VStack {
+                if isActive {
+                    LoginView() // Your main content view
+                } else {
+                    SplashView()
+                }
+            }
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    withAnimation {
+                        self.isActive = true
+                    }
+                }
+            }
+        }
             
         }
     }
-}
+
