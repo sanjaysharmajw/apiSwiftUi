@@ -18,7 +18,7 @@ struct SplashView: View {
                 .foregroundColor(.white)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity) // Make the view take up the full screen
-        .background(Color.blue) // Set the background color to blue
+        .background(Color.blue) // Set the background color to 
         .edgesIgnoringSafeArea(.all) // Ensure the view covers the entire screen, including safe areas
     }
 }

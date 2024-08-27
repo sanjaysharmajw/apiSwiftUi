@@ -24,7 +24,7 @@ struct BottomNavigationView: View {
             
             ListView()
                 .tabItem {
-                    Label("List", systemImage: "list.dash")
+                    Label("List", systemImage: "list.bullet.rectangle.portrait")
                 }
                 .tag(1)
                 .onAppear {

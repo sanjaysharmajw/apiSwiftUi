@@ -13,29 +13,28 @@ struct LoginView: View {
     
     @StateObject private var viewModel = LoginViewModel()
     @State private var isSecondViewActive = false
+    @State private var isMainPageActive = false
+    @State private var isForgotViewActive = false
 
-    
     var body: some View {
         NavigationView{
             VStack(spacing: 20){
                 CustomText(text: "Login!").font(.system(size: 40)).padding(.bottom)
                 if let loginResponse = viewModel.loginResponse {
-                
                     Text("Login successful: \(loginResponse.token)").padding()
-                    NavigationLink(destination: RegistrationView(), isActive: $isSecondViewActive) {
-                                      EmptyView()
-                                  }
                 }
                 
                 CustomTextField(text: $viewModel.email, placeholder: "Email")
                 CustomTextField(text: $viewModel.password, placeholder: "Password")
                 HStack {
-                    Spacer()
-                    Button("Forgot password") {
-                        viewModel.login()
-                    }
+                    Button("Sign up") {
+                        isSecondViewActive = true
                     
                     }
+                Spacer()
+                    Button("Forgot password") {
+                        isForgotViewActive = true
+                    }}
                     .alert(item: $viewModel.alertItem) { alertItem in
                         Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
                     }
@@ -44,16 +43,21 @@ struct LoginView: View {
                              ProgressView().padding()
                          } else {
                              CustomButton(title: "Login") {
-                                 isSecondViewActive = true
+                                 isMainPageActive = true
                                  viewModel.login()
                              }.padding()
                          }
+                
+            navigate(to: RegistrationView(), when: $isSecondViewActive)
+            navigate(to: BottomNavigationView(), when: $isMainPageActive)
+            navigate(to: ForgotPasswordView(), when: $isForgotViewActive)
             }.padding(20)
+                
+                
         }
         
     }
 
-      
 }
 
 #Preview {

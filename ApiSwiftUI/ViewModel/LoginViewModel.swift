@@ -22,6 +22,7 @@ class LoginViewModel: ObservableObject {
                 self.loginResponse = response
                 self.errorMessage = nil
                     UserDefaultsManager.shared.saveLoginToken("Sanjay")
+                    self.alertItem = AlertContext.successfullData
                 case .failure(let error):
                     self.loginResponse = nil
                     self.errorMessage = error.localizedDescription

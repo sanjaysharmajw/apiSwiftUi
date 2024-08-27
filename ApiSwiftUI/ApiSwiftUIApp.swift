@@ -14,9 +14,14 @@ struct ApiSwiftUIApp: App {
         WindowGroup {
             VStack {
                 if isActive {
-                    LoginView() // Your main content view
+                   LoginView()
+                   // BottomNavigationView()
+                    //  RegistrationView()
+                   // IntroSliderView()
                 } else {
-                    SplashView()
+                   // SplashView()
+                   // LoginView()
+                    LoginView()
                 }
             }
             .onAppear {

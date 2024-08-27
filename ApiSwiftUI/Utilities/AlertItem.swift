@@ -27,4 +27,10 @@ enum AlertContext {
     static let invalidData      = AlertItem(title: Text("Server Error"),
                                             message: Text("The data received from the server was invalid. Please try again or contact support."),
                                             dismissButton: .default(Text("Ok")))
+    
+    
+    static let successfullData      = AlertItem(title: Text("Successful"),
+                                            message: Text("Login Successful"),
+                                            dismissButton: .default(Text("Ok")))
+    
 }

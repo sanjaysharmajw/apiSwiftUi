@@ -12,9 +12,15 @@
 		3C178D772C4AD7F9000DCDF6 /* SwipeToDismissModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C178D762C4AD7F9000DCDF6 /* SwipeToDismissModifier.swift */; };
 		3C178D7A2C4AD9E5000DCDF6 /* CustomNavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C178D792C4AD9E5000DCDF6 /* CustomNavigationBarModifier.swift */; };
 		3C178D7C2C4AE9CE000DCDF6 /* NavigationBarAppearanceModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C178D7B2C4AE9CE000DCDF6 /* NavigationBarAppearanceModifier.swift */; };
+		3C242B3C2C7DA47D0085873D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C242B3B2C7DA47D0085873D /* View.swift */; };
+		3C242B3E2C7DA5C60085873D /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C242B3D2C7DA5C60085873D /* ForgotPasswordView.swift */; };
 		3C4722292C50170800EB9ACE /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4722282C50170800EB9ACE /* UserListView.swift */; };
 		3C47222B2C50172E00EB9ACE /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47222A2C50172E00EB9ACE /* UserListViewModel.swift */; };
 		3C6AF5442C490D94008E65B4 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6AF5432C490D94008E65B4 /* UserDefaultsManager.swift */; };
+		3C9826132C525E2A00EB3432 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9826122C525E2A00EB3432 /* PageView.swift */; };
+		3C9826152C525E5300EB3432 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9826142C525E5300EB3432 /* PageModel.swift */; };
+		3C9826182C526A7B00EB3432 /* IntroPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9826172C526A7B00EB3432 /* IntroPageView.swift */; };
+		3C98261A2C526B0400EB3432 /* IntroButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9826192C526B0400EB3432 /* IntroButtonView.swift */; };
 		3C985D042C4C2FE60058A153 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C985D032C4C2FE60058A153 /* SplashView.swift */; };
 		3C9B5A162C4FF497003E3BE5 /* UserListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B5A152C4FF497003E3BE5 /* UserListModel.swift */; };
 		3C9B5A182C4FF6F0003E3BE5 /* UserListNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B5A172C4FF6F0003E3BE5 /* UserListNetwork.swift */; };
@@ -61,9 +67,15 @@
 		3C178D762C4AD7F9000DCDF6 /* SwipeToDismissModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeToDismissModifier.swift; sourceTree = "<group>"; };
 		3C178D792C4AD9E5000DCDF6 /* CustomNavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarModifier.swift; sourceTree = "<group>"; };
 		3C178D7B2C4AE9CE000DCDF6 /* NavigationBarAppearanceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarAppearanceModifier.swift; sourceTree = "<group>"; };
+		3C242B3B2C7DA47D0085873D /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		3C242B3D2C7DA5C60085873D /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		3C4722282C50170800EB9ACE /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		3C47222A2C50172E00EB9ACE /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		3C6AF5432C490D94008E65B4 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		3C9826122C525E2A00EB3432 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		3C9826142C525E5300EB3432 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		3C9826172C526A7B00EB3432 /* IntroPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPageView.swift; sourceTree = "<group>"; };
+		3C9826192C526B0400EB3432 /* IntroButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroButtonView.swift; sourceTree = "<group>"; };
 		3C985D032C4C2FE60058A153 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		3C9B5A152C4FF497003E3BE5 /* UserListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModel.swift; sourceTree = "<group>"; };
 		3C9B5A172C4FF6F0003E3BE5 /* UserListNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListNetwork.swift; sourceTree = "<group>"; };
@@ -125,6 +137,15 @@
 			path = CustomToolbar;
 			sourceTree = "<group>";
 		};
+		3C9826162C526A2900EB3432 /* IntroSlider */ = {
+			isa = PBXGroup;
+			children = (
+				3C9826172C526A7B00EB3432 /* IntroPageView.swift */,
+				3C9826192C526B0400EB3432 /* IntroButtonView.swift */,
+			);
+			path = IntroSlider;
+			sourceTree = "<group>";
+		};
 		3CC267882C47BB7600B23BDF = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +169,7 @@
 		3CC267932C47BB7600B23BDF /* ApiSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				3C9826162C526A2900EB3432 /* IntroSlider */,
 				3CC267D82C47C1D900B23BDF /* Utilities */,
 				3CC267CF2C47C02700B23BDF /* CustomView */,
 				3CC267CC2C47BFBA00B23BDF /* View */,
@@ -201,6 +223,7 @@
 			children = (
 				3CC267C52C47BE5D00B23BDF /* LoginModel.swift */,
 				3C9B5A152C4FF497003E3BE5 /* UserListModel.swift */,
+				3C9826142C525E5300EB3432 /* PageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -231,6 +254,8 @@
 				3C178D742C4AC5FC000DCDF6 /* ToolbarView.swift */,
 				3C985D032C4C2FE60058A153 /* SplashView.swift */,
 				3C4722282C50170800EB9ACE /* UserListView.swift */,
+				3C9826122C525E2A00EB3432 /* PageView.swift */,
+				3C242B3D2C7DA5C60085873D /* ForgotPasswordView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -253,6 +278,7 @@
 				3CC267CA2C47BF5E00B23BDF /* APError.swift */,
 				3CC267D92C47C1F300B23BDF /* AlertItem.swift */,
 				3C6AF5432C490D94008E65B4 /* UserDefaultsManager.swift */,
+				3C242B3B2C7DA47D0085873D /* View.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -395,21 +421,27 @@
 				3CC267D32C47C04D00B23BDF /* CustomTextField.swift in Sources */,
 				3CC267D72C47C13200B23BDF /* LoadingView.swift in Sources */,
 				3CC267C02C47BDCA00B23BDF /* LoginViewModel.swift in Sources */,
+				3C9826152C525E5300EB3432 /* PageModel.swift in Sources */,
 				3C178D772C4AD7F9000DCDF6 /* SwipeToDismissModifier.swift in Sources */,
 				3CC267CB2C47BF5E00B23BDF /* APError.swift in Sources */,
 				3C178D7A2C4AD9E5000DCDF6 /* CustomNavigationBarModifier.swift in Sources */,
 				3CC267D52C47C05800B23BDF /* CustomText.swift in Sources */,
 				3C9B5A182C4FF6F0003E3BE5 /* UserListNetwork.swift in Sources */,
 				3C0AD9E32C4831C700FA1E69 /* BottomNavigationView.swift in Sources */,
+				3C98261A2C526B0400EB3432 /* IntroButtonView.swift in Sources */,
 				3C9B5A162C4FF497003E3BE5 /* UserListModel.swift in Sources */,
 				3C178D752C4AC5FC000DCDF6 /* ToolbarView.swift in Sources */,
 				3CC267C92C47BF1900B23BDF /* LoginNetwork.swift in Sources */,
 				3C6AF5442C490D94008E65B4 /* UserDefaultsManager.swift in Sources */,
 				3C4722292C50170800EB9ACE /* UserListView.swift in Sources */,
 				3C178D7C2C4AE9CE000DCDF6 /* NavigationBarAppearanceModifier.swift in Sources */,
+				3C9826132C525E2A00EB3432 /* PageView.swift in Sources */,
+				3C242B3C2C7DA47D0085873D /* View.swift in Sources */,
 				3CC267CE2C47BFE100B23BDF /* LoginView.swift in Sources */,
+				3C9826182C526A7B00EB3432 /* IntroPageView.swift in Sources */,
 				3C985D042C4C2FE60058A153 /* SplashView.swift in Sources */,
 				3CC267DA2C47C1F300B23BDF /* AlertItem.swift in Sources */,
+				3C242B3E2C7DA5C60085873D /* ForgotPasswordView.swift in Sources */,
 				3CC267C42C47BE5200B23BDF /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
